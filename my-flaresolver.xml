@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!-- Docker Container Configuration for flaresolverr -->
+<Container version="2">
+    <!-- Basic container information -->
+    <Name>flaresolverr</Name>
+    <Repository>flaresolverr/flaresolverr</Repository>
+    <Registry>https://hub.docker.com/r/flaresolverr/flaresolverr</Registry>
+    <Network>media</Network>
+    <Privileged>false</Privileged>
+    <Project>https://github.com/FlareSolverr/FlareSolverr</Project>
+    <Icon>https://raw.githubusercontent.com/FlareSolverr/FlareSolverr/master/resources/flaresolverr_logo.png</Icon>
+    <!-- DateInstalled will be automatically filled by Unraid upon installation -->
+    <DateInstalled></DateInstalled>
+    
+    <!-- Configuration settings for the container -->
+    <!-- Port configuration -->
+    <Config Name="Port" Target="8191" Default="8191" Mode="tcp" Type="Port" Display="always" Required="true" Mask="false">
+        <!-- The internal and external port for the container -->
+    </Config>
+    
+    <!-- Log Level configuration -->
+    <Config Name="Log Level" Target="LOG_LEVEL" Default="info" Mode="" Type="Variable" Display="always" Required="false" Mask="false">
+        <!-- Defines the verbosity of the logging (e.g., info, debug) -->
+    </Config>
+
+    <!-- Time Zone configuration -->
+    <Config Name="Time Zone" Target="TZ" Default="UTC" Mode="" Type="Variable" Display="always" Required="false" Mask="false">
+        <!-- Sets the timezone for the container -->
+    </Config>
+</Container>
