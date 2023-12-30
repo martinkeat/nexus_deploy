@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Script to move files from specific directories to new locations
+# Use this script in "user scripts" plugin. Set name to watched_transfer_script and cron to custom: */1 * * * *
 
 # Function to move files
 move_files() {
